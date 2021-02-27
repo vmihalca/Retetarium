@@ -1,0 +1,10 @@
+@import "general";
+@import "variables";
+@import "mixin";
+
+header {
+  background-color: bisque;
+  .test {
+    color: gray;
+  }
+}
