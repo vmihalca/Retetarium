@@ -1,0 +1,27 @@
+.body-container {
+    max-width: 1093px;
+    margin: 60px auto;
+    .carousel-circle{
+        margin: 70px 0;
+        .splide__slide{
+            text-align: center;
+        }
+        .splide__slide {
+            padding: 10px 0;
+        }
+        img {
+            width: 170px;
+            border-radius: 50%;
+            transition: transform .2s;
+
+            &:hover {
+                transform: scale(1.1); 
+            }
+        }
+        p {
+            margin-top: 10px;
+            font-weight: bolder;
+            font-size: 1.1em;
+        }
+    }   
+}

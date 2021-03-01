@@ -1,0 +1,61 @@
+.recepies__grid {
+    .recepies__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 1em;
+        justify-items: center;
+
+        .box__card {
+            border-radius: 10px;
+            box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+            &:hover {
+                box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.3);
+            }
+            .card__image {
+                position: relative;
+                img {
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+                .card__title {
+                    position: absolute;
+                    width: 100%;
+                    color: white;
+                    bottom: 5px;
+                    padding: 20px 10px;
+                    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9));
+                }
+            }
+            .card__description{
+                display: flex;
+                flex-wrap: wrap;
+                .desc {
+                    width: 50%;
+                    text-align: center;
+                    padding: 10px 0;
+                    ion-icon{
+                        color: $olive;
+                    }
+                }
+                .desc.time {
+                    border-bottom: 1px solid $border;
+                    border-right: 1px solid $border;
+                }
+                .dificulty{
+                    border-bottom: 1px solid $border;
+                }
+                .kal {
+                    border-right: 1px solid $border;
+                }
+                .type {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .type img {
+                        color: $olive;
+                    }
+                }
+            }
+        }
+    }
+}

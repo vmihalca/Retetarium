@@ -1,15 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,200;1,300;1,400&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Source Serif Pro', serif;
 }
 
-header {
-  background-color: bisque;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-header .test {
-  color: gray;
+.btn {
+  width: 130px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #B5CC18;
+  color: black;
+  line-height: 2.5;
+  text-align: center;
 }
-/*# sourceMappingURL=style.css.map */
+
+.line {
+  width: 164px;
+  height: 2px;
+  background-color: #B5CC18;
+}
+
+.navbar {
+  background-color: white;
+  padding: 1em 0;
+  margin: 0 auto;
+  max-width: 1093px;
+  -webkit-box-shadow: 0px 6px 10px -10px rgba(194, 194, 194, 0.5);
+          box-shadow: 0px 6px 10px -10px rgba(194, 194, 194, 0.5);
+  position: relative;
+  z-index: 99;
+  -webkit-transition: all 700ms;
+  transition: all 700ms;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .navbar_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar .navbar_menu .navbar_items {
+  margin-right: 20px;
+  -webkit-transition: color 800ms;
+  transition: color 800ms;
+}
+
+.navbar .navbar_menu .navbar_items:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #B5CC18;
+}
+
+.navbar .navbar_menu .navbar_items:hover ion-icon {
+  color: #B5CC18;
+}
+
+.navbar .navbar_menu .navbar_items ion-icon {
+  vertical-align: text-top;
+}
+
+.navbar .navbar_menu .navbar_login ion-icon {
+  vertical-align: text-top;
+}
+
+.navbar #navbar_logo {
+  font-weight: bold;
+  color: black;
+  font-size: 1.6em;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.carousel-header .splide__arrow {
+  display: none;
+}
+
+.slide_info_wrapper {
+  max-width: 1093px;
+  margin: 0 auto;
+}
+
+.slide_info_wrapper .slide_info {
+  width: 350px;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3rem;
+}
+
+.slide_info_wrapper .slide_info * {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.slide_info_wrapper .slide_info h2 {
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.slide_info_wrapper .slide_info p {
+  margin: 40px 0;
+}
+
+nav.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 1.3em 2em;
+  background-color: white;
+  opacity: 0.9;
+}
+
+footer {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+}
+
+footer a {
+  color: white;
+}
+
+footer a i {
+  color: #B5CC18;
+}
+
+.body-container {
+  max-width: 1093px;
+  margin: 60px auto;
+}
+
+.body-container .carousel-circle {
+  margin: 70px 0;
+}
+
+.body-container .carousel-circle .splide__slide {
+  text-align: center;
+}
+
+.body-container .carousel-circle .splide__slide {
+  padding: 10px 0;
+}
+
+.body-container .carousel-circle img {
+  width: 170px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.body-container .carousel-circle img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.body-container .carousel-circle p {
+  margin-top: 10px;
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+.recepies__grid .recepies__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 1em;
+  justify-items: center;
+}
+
+.recepies__grid .recepies__list .box__card {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.recepies__grid .recepies__list .box__card:hover {
+  -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.recepies__grid .recepies__list .box__card .card__image {
+  position: relative;
+}
+
+.recepies__grid .recepies__list .box__card .card__image img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.recepies__grid .recepies__list .box__card .card__image .card__title {
+  position: absolute;
+  width: 100%;
+  color: white;
+  bottom: 5px;
+  padding: 20px 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.9)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+}
+
+.recepies__grid .recepies__list .box__card .card__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recepies__grid .recepies__list .box__card .card__description .desc {
+  width: 50%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.recepies__grid .recepies__list .box__card .card__description .desc ion-icon {
+  color: #B5CC18;
+}
+
+.recepies__grid .recepies__list .box__card .card__description .desc.time {
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+
+.recepies__grid .recepies__list .box__card .card__description .dificulty {
+  border-bottom: 1px solid #ececec;
+}
+
+.recepies__grid .recepies__list .box__card .card__description .kal {
+  border-right: 1px solid #ececec;
+}
+
+.recepies__grid .recepies__list .box__card .card__description .type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recepies__grid .recepies__list .box__card .card__description .type .type img {
+  color: #B5CC18;
+}

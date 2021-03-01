@@ -1,10 +1,8 @@
-@import "general";
 @import "variables";
+@import "general";
 @import "mixin";
-
-header {
-  background-color: bisque;
-  .test {
-    color: gray;
-  }
-}
+@import "header";
+@import "home";
+@import "footer";
+@import "homepage";
+@import "grid";
