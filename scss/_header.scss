@@ -27,14 +27,10 @@
                     color: $olive;
                 }
             }
-            ion-icon {
-                vertical-align: text-top;
-            }
         }
-        .navbar_login {
-            ion-icon {
-                vertical-align: text-top;
-            }
+        ion-icon {
+            vertical-align: text-top;
+            font-size: 20px;
         }
     }
     #navbar_logo {
@@ -44,9 +40,25 @@
         font-family: 'Bebas Neue', cursive;
     }
 }
+.recipe-search {
+    text-align: end;
+    position: relative;
+    input {
+        width: 450px;
+        height: 30px;
+    }
+    ion-icon {
+        position: absolute;
+        right: 5px;
+        top: 7px;
+    }
+}
 .carousel-header {
     .splide__arrow {
         display: none;
+    }
+    .splide__pagination {
+        bottom: -20px;
     }
 }
 .slide_info_wrapper {

@@ -73,12 +73,9 @@ a {
   color: #B5CC18;
 }
 
-.navbar .navbar_menu .navbar_items ion-icon {
+.navbar .navbar_menu ion-icon {
   vertical-align: text-top;
-}
-
-.navbar .navbar_menu .navbar_login ion-icon {
-  vertical-align: text-top;
+  font-size: 20px;
 }
 
 .navbar #navbar_logo {
@@ -88,8 +85,28 @@ a {
   font-family: 'Bebas Neue', cursive;
 }
 
+.recipe-search {
+  text-align: end;
+  position: relative;
+}
+
+.recipe-search input {
+  width: 450px;
+  height: 30px;
+}
+
+.recipe-search ion-icon {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+}
+
 .carousel-header .splide__arrow {
   display: none;
+}
+
+.carousel-header .splide__pagination {
+  bottom: -20px;
 }
 
 .slide_info_wrapper {
@@ -167,6 +184,10 @@ footer a i {
   text-align: center;
 }
 
+.body-container .carousel-circle .splide__pagination {
+  display: none;
+}
+
 .body-container .carousel-circle .splide__slide {
   padding: 10px 0;
 }
@@ -204,6 +225,7 @@ footer a i {
   border-radius: 10px;
   -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+  width: 350px;
 }
 
 .recepies__grid .recepies__list .box__card:hover {
@@ -218,6 +240,8 @@ footer a i {
 .recepies__grid .recepies__list .box__card .card__image img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  height: 330px;
+  width: 100%;
 }
 
 .recepies__grid .recepies__list .box__card .card__image .card__title {
