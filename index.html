@@ -34,6 +34,10 @@
                 </li>
             </ul>
         </div>
+        <form class="recipe-search" action="">
+            <input type="text" placeholder="Cauta reteta...">
+            <ion-icon name="search-outline"></ion-icon>
+        </form>
     </nav>
     <header>
         <div class="carousel-header">
@@ -101,12 +105,14 @@
             </div>
             <div class="recepies__list">
                 <div class="box__card">
+                    <a href="#">
                     <div class="card__image">
                         <img src="img/food.jpg" alt="">
                         <div class="card__title">
                             <h3>Pateuri cu branza</h3>
                         </div>
                     </div>
+                </a>
                     <div class="card__description">
                         <div class="desc time">
                             <h3>Timp prep.</h3>
@@ -230,6 +236,7 @@
         </div>
     </footer>
     <script src="app.js"></script>
+    <script src="api.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
