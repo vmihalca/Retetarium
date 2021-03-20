@@ -1,13 +1,28 @@
-footer {
+footer{
     height: 200px;
     display: flex;
     justify-content: space-between;
     background-color: black;
+    padding: 1.3em 2em;
+    margin: 0;
+
     a {
         color: white;
-        i {
-            color: $olive;
+    }
+
+    .logo__footer {
+        font-size: 48px;
+        letter-spacing: -1px;
+        a {
+            font-family: 'Bebas Neue', cursive;
         }
-    
+    }
+
+    .container__info {
+        display: flex;
+        justify-content:space-between;
+        text-align: center;
+        width: 400px;
+        color:white;
     }
 }
