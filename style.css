@@ -17,16 +17,22 @@ a {
   width: 130px;
   height: 40px;
   border-radius: 15px;
-  background-color: #B5CC18;
+  background: -webkit-linear-gradient(225deg, #1ad4bb, #B5CC18);
+  -webkit-box-shadow: 0 1px 16px 0 rgba(70, 89, 138, 0.3);
+          box-shadow: 0 1px 16px 0 rgba(70, 89, 138, 0.3);
   color: black;
   line-height: 2.5;
   text-align: center;
 }
 
+.btn:hover {
+  opacity: .9;
+}
+
 .line {
   width: 164px;
   height: 2px;
-  background-color: #B5CC18;
+  background: -webkit-linear-gradient(225deg, #1ad4bb, #B5CC18);
 }
 
 .navbar {
@@ -60,17 +66,16 @@ a {
 
 .navbar .navbar_menu .navbar_items {
   margin-right: 20px;
-  -webkit-transition: color 800ms;
-  transition: color 800ms;
+  height: 25px;
+  opacity: .7;
 }
 
 .navbar .navbar_menu .navbar_items:hover {
   cursor: pointer;
-  border-bottom: 2px solid #B5CC18;
-}
-
-.navbar .navbar_menu .navbar_items:hover ion-icon {
-  color: #B5CC18;
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(225deg, #1ad4bb, #B5CC18);
+  opacity: 1;
 }
 
 .navbar .navbar_menu ion-icon {
@@ -78,11 +83,23 @@ a {
   font-size: 20px;
 }
 
+.navbar .navbar_menu .navbar_login {
+  opacity: .7;
+}
+
 .navbar #navbar_logo {
   font-weight: bold;
   color: black;
   font-size: 1.6em;
   font-family: 'Bebas Neue', cursive;
+}
+
+.navbar #navbar_logo span {
+  background: -webkit-linear-gradient(225deg, #1ad4bb, #B5CC18);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: inherit;
 }
 
 .recipe-search {
