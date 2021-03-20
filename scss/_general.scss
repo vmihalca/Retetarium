@@ -16,13 +16,17 @@ a {
   width: 130px;
   height: 40px;
   border-radius: 15px;
-  background-color: $olive;
+  background: -webkit-linear-gradient(225deg, #1ad4bb, $olive);
+  box-shadow: 0 1px 16px 0 rgba(70, 89, 138, 0.3);
   color: black;
   line-height: 2.5;
   text-align: center;
+  &:hover {
+    opacity: .9;
+  }
 }
 .line {
   width: 164px;
   height: 2px;
-  background-color: $olive;
+  background: -webkit-linear-gradient(225deg, #1ad4bb, $olive);
 }
