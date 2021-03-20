@@ -30,3 +30,12 @@ a {
   height: 2px;
   background: -webkit-linear-gradient(225deg, #1ad4bb, $olive);
 }
+.lock-scroll {
+  overflow: hidden;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

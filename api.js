@@ -9,6 +9,9 @@ searchForm.addEventListener('submit', (e) => {
     searchQuery = e.target.querySelector('form.recipe-search input').value;
     fetchAPI();
     document.querySelector('form.recipe-search input').value='';
+    $('html, body').animate({
+        scrollTop: $(".recepies__grid").offset().top
+    }, 2000);
 });
 
 async function fetchAPI () {

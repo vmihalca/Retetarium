@@ -31,3 +31,13 @@ function makeChangeNav(e) {
     }
 }
 window.addEventListener('scroll',makeChangeNav);
+
+//hamburger
+const navbar = document.querySelector('.navbar_menu');
+const hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener("click", function(){
+    navbar.classList.toggle("responsive");
+    hamburger.classList.toggle("rotate");
+    document.body.classList.toggle('lock-scroll');
+ });
