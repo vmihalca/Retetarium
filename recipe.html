@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="carousel/splide.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <script src="carousel/splide.min.js"></script>
+        <title>Retetarium</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" id="navbar_logo">Yummy<span>Yum</span></a>
+                <ul class="navbar_menu">
+                    <li class="navbar_items">
+                        <ion-icon name="planet-outline"></ion-icon>
+                        <a href="/" class="navbar_links">HOME</a>
+                    </li>
+                    <li class="navbar_items">
+                        <ion-icon name="alarm-outline"></ion-icon>
+                        <a href="/" class="navbar_links">RETETE RAPIDE</a>
+                    </li>
+                    <li class="navbar_items">
+                        <ion-icon name="nutrition-outline"></ion-icon>
+                        <a href="/" class="navbar_links">CATEGORII</a>
+                    </li>
+                    <li class="navbar_login">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <a href="/" class="navbar_links">LOG IN</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="recipe-search" action="">
+                <input type="text" placeholder="Cauta reteta..." />
+                <ion-icon name="search-outline"></ion-icon>
+            </form>
+            <div class="hamburger">
+                <div></div>
+            </div>
+        </nav>
+        <main class="body-container recip__main">
+           <div class="recepie__ingredients">
+               <h3><span>Paste cu usturoi</span></h3>
+               <p>Ingrediente:</p>
+                <ul class="ingredients">
+                    <li>50 gr unt</li>
+                    <li>2 cepe medii sau una mare</li>
+                    <li>Praz</li>
+                    <li>500 gr cartofi albi fainosi</li>
+                    <li>4 linguri smantana de gatit</li>
+                    <li>Sare si piper</li>
+                </ul>
+                <div class="recepie__prep">
+                    <div class="recepie__info">
+                        <div>Dificultate:</div>
+                        <div>Timp prep:</div>
+                        <div>Calorii:</div>
+                        <div>Categorie:</div>
+                    </div>
+                    <div class="recepie__result">
+                        <div>Usor</div>
+                        <div>15 min</div>
+                        <div>322</div>
+                        <div>Vegetarian</div>
+                    </div>
+                </div>
+           </div>
+           <div class="recepie__preparation">
+               <img src="img/pasta.jpg" alt="Pasta">
+               <h3>Mod de preparare:</h3>
+               <ol class="recepie__steps">
+                    <li>Boil the pasta in a large pot of salted water. Get this going before you start cooking the chicken and you can add the dried pasta right around the same time you start cooking the chicken breast. Save a cup of the pasta water to thin the sauce if needed</li>
+                    <li>Cook the chicken breasts in a combination of oil and butter for golden crispness. This is our favorite golden, crispy chicken technique. You can read more about it here. You can cover the chicken breasts with foil while you finish the sauce to keep them warm.</li>
+                    <li>Pasta is ready, chicken is ready, make your sauce. Once your pasta is cooked and drained, and your chicken is cooked and sliced, the actual Alfredo sauce takes just a few minutes to make in the same skillet you cooked the chicken in.</li>
+                </ol>
+           </div>
+        </main>
+        <footer class="footer__container">
+            <div class="logo__footer">
+                <a href="index.html" id="navbar_logo">Yummy<span>Yum</span></a>
+            </div>
+            <div class="container__info">
+                <a href="/" class="footer_information">MAGAZINE</a>
+                <a href="/" class="footer_information">ADVENTURES</a>
+                <a href="/" class="footer_information">FAQ</a>
+                <a href="/" class="footer_information">ABOUT US</a>
+            </div>
+            <div class="social_icons">
+                <a href="/" class="social_icons_links" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="/" class="social_icons_links" target="_blank">
+                    <i class="fa fa-youtube"></i>
+                </a>
+                <a href="/" class="social_icons_links" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </div>
+        </footer>
+        <script src="app.js"></script>
+        <script src="api.js"></script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </body>
+</html>

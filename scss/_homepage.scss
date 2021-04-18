@@ -2,7 +2,7 @@
     max-width: 1093px;
     margin: 60px auto;
     .carousel-circle{
-        margin: 70px 0;
+        margin: 60px 0;
         .splide__slide{
             text-align: center;
         }
@@ -17,6 +17,10 @@
             border-radius: 50%;
             transition: transform .2s;
 
+            @media screen and (max-width: 600px) {
+                width: 115px;
+            }
+
             &:hover {
                 transform: scale(1.1); 
             }
@@ -25,6 +29,20 @@
             margin-top: 10px;
             font-weight: bolder;
             font-size: 1.1em;
+        }
+    }
+    .recepies__dropdown {
+        width: 190px;
+        margin-bottom: 50px;
+        @media screen and (max-width: 1093px) {
+            margin-left: 5%;
+        }
+        
+        select {
+            width: 100%;
+            border: none;
+            outline: none;
+            border-bottom: solid $olive;         
         }
     }   
 }

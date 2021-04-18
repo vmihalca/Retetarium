@@ -51,12 +51,22 @@
             margin-right: 20px;
             height: 25px;
             opacity: .7;
+            padding-bottom:8px;
+            background:
+                        linear-gradient(225deg, #1ad4bb, $olive) calc(50% + calc(var(--d,1)*1px)) 100%,
+                        linear-gradient(225deg, #1ad4bb, $olive) calc(50% - calc(var(--d,1)*1px)) 100%,
+                        linear-gradient(225deg, #1ad4bb, $olive) calc(50% + calc(var(--d,1)*9px)) 100%,
+                        linear-gradient(225deg, #1ad4bb, $olive) calc(50% - calc(var(--d,1)*9px)) 100%;
+            background-size:6px 3px;
+            background-repeat:no-repeat;
+            transition:0.5s;
             &:hover {
                 cursor: pointer;
-                border-bottom: 2px solid;
-                border-image-slice: 1;
-                border-image-source: linear-gradient(225deg, #1ad4bb, $olive);
-                opacity: 1;
+                // border-bottom: 2px solid;
+                // border-image-slice: 1;
+                // border-image-source: linear-gradient(225deg, #1ad4bb, $olive);
+                // opacity: 1;
+                --d:8; 
             }
         }
         ion-icon {
@@ -134,10 +144,17 @@
     position: relative;
     @media screen and (max-width: 600px) {
         display: none;
+        position: absolute;
+        top: 154px;
+        width: 70%;
+        left: 15%;
     }
     input {
         width: 450px;
         height: 30px;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
     }
     ion-icon {
         position: absolute;
@@ -145,12 +162,27 @@
         top: 7px;
     }
 }
+.mobile-search {
+    z-index: 2;
+    display: block;
+    @media screen and (min-width: 600px) {
+        display: none;
+    }
+}
 .carousel-header {
+    .splide__slide {
+        @media screen and (max-width: 600px) {
+            height: 200px!important;
+        }
+    }
     .splide__arrow {
         display: none;
     }
     .splide__pagination {
         bottom: -20px;
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
     }
 }
 .slide_info_wrapper {
@@ -163,6 +195,9 @@
         text-align: justify;
         flex-direction: column;
         margin-top: 3rem;
+        @media screen and (max-width: 600px) {
+            display: none;
+         }
         * {
             align-self: flex-end;
         }

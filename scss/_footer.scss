@@ -1,10 +1,12 @@
 footer{
-    height: 200px;
     display: flex;
     justify-content: space-between;
     background-color: black;
-    padding: 1.3em 2em;
+    padding: 1.5em 1em;
     margin: 0;
+    @media screen and (max-width:600px){
+        justify-content: space-between;
+    }
 
     a {
         color: white;
@@ -13,8 +15,18 @@ footer{
     .logo__footer {
         font-size: 48px;
         letter-spacing: -1px;
-        a {
-            font-family: 'Bebas Neue', cursive;
+        @media screen and (max-width:600px) {
+            font-size: 26px;
+            
+        }
+        
+        span {
+            background: -webkit-linear-gradient(225deg, #1ad4bb, $olive);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: inherit;
+            font-family: "Bebas Neue", cursive;
         }
     }
 
@@ -22,7 +34,17 @@ footer{
         display: flex;
         justify-content:space-between;
         text-align: center;
-        width: 400px;
+        width: 50%;
         color:white;
+        a {
+            &:hover {
+                cursor: pointer;
+                color: $olive;
+            }
+        }
+
+        @media screen and (max-width:600px){
+        flex-direction: column;
+    }
     }
 }
